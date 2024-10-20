@@ -1,7 +1,7 @@
 import * as arrayOperations from './arrayOperations';
 
-const list1: string[] = ["element1", "element2", "element3", "element4"];
-const list2: string[] = [
+export const list1: string[] = ["element1", "element2", "element3", "element4"];
+export const list2: string[] = [
   "element1",
   "element2",
   "element3",
