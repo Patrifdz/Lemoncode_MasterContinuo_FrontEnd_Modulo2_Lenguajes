@@ -1,5 +1,6 @@
 import * as arrayOperations from './arrayOperations';
 import { array1, array2, concat } from './concat';
+import { source, clone } from './cloneMerge';
 
 export const list1: string[] = ["element1", "element2", "element3", "element4"];
 export const list2: string[] = [
@@ -24,3 +25,6 @@ console.log(arrayOperations.last(list2));
 
 // ** Function CONCAT ->
 console.log(concat(...array1, ...array2));
+
+// ** Function CLONE ->
+console.log(clone(source));
