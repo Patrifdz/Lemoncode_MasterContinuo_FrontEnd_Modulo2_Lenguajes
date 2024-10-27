@@ -1,12 +1,16 @@
 // 1. ARRAY OPERATIONS
 // ** Function HEAD ->
-export const head = (list: string[]): string => {
-    const [firstElement] = list;
-    return firstElement;
+
+  export const head = ([firstElement]: string[]): string => {
+    return  firstElement;
   };
   // ** Function TAIL ->
-  export const tail = (list: string[]): string[] => {
-    const [, ...rest] = list;
+  // export const tail = (list: string[]): string[] => {
+  //   const [, ...rest] = list;
+  //   return rest;
+  // };
+
+  export const tail = ( [ , ...rest] : string[]): string[] => {
     return rest;
   };
   // ** Function INIT->
@@ -17,3 +21,5 @@ export const head = (list: string[]): string => {
   export const last = (list: string[]): string[] => {
     return list.slice(list.length - 1);
   };
+
+  

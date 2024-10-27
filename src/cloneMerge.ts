@@ -6,12 +6,6 @@ export const source : model.Source = {
     edad: 34,
 }
 
-export const target : model.Target = {
-    nombre: "María",
-    ciudad: "Almería",
-    teléfono: 644956505,
-}
-
 // ** FUNCTION CLONE -> 
 export const clone =<T> ( object : T  )  : T => { 
     return { ... object }
@@ -32,7 +26,7 @@ export const b : model.B = {
 };
 
 export const merge = ( object1 : model.A, object2 : model.B) : object => {
-     const ab = {name: "Maria", age: 31, married: true, surname: "Ibañez", country: "SPA"}
+     const ab = {...object2, ...object1}
      return ab;
 }
     
