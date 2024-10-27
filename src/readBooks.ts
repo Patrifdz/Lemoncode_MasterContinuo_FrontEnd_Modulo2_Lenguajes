@@ -15,13 +15,3 @@ export const isBookRead = ( bookList : model.Books[ ] , titleToSearch: string ) 
                 });
                 return result;
  }
-
-//  export const isBookRead = ( bookList : model.Books[ ] , titleToSearch: string ) : boolean => { 
-//   let result = false;
-//   for(let i = 0; i<bookList.length; i++) {
-//       if(bookList[i].title === titleToSearch && bookList[i].isRead) {
-//         return result = true;
-//       }
-//   }
-//          return result;
-// }

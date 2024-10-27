@@ -1,6 +1,7 @@
 import * as arrayOperations from './arrayOperations';
 import { array1, array2, concat } from './concat';
 import { source, clone, merge, a, b } from './cloneMerge';
+import { SlotMachine  } from './slotMachine';
 
 export const list1: string[] = ["element1", "element2", "element3", "element4"];
 export const list2: string[] = [
@@ -11,7 +12,7 @@ export const list2: string[] = [
   "element5",
 ];
 // ** Function HEAD ->
-console.log( `Function HEAD -> ${arrayOperations.head( list1)}`);
+console.log( `Function HEAD -> ${arrayOperations.head( list1)}`); 
 
 // ** Function TAIL ->
 console.log(`Function TAIL -> ${arrayOperations.tail(list1)}`);
@@ -31,3 +32,12 @@ console.log(`Function CLONE -> ${clone(source)}`);
 
 // ** Function MERGE ->
 console.log(`Function MERGE -> ${merge( a, b )}`);
+
+// ** Class SlotMachine -> 
+const machine1 = new SlotMachine ( );
+console.log(machine1.play( ));
+console.log(machine1.play( ));
+console.log(machine1.play( ));
+console.log(machine1.play( ));
+console.log(machine1.play( ));
+
